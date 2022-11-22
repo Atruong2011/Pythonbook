@@ -1,17 +1,22 @@
 # Angry Goblin: Getting Started
 import random
 number_of_doors = 5
+
+# Display welcome messages
 print("Welcome to the Angry Goblin Hunt")
 print("An award-winning game full of adventure and excitement (!)")
 
+# Get player name
 player_name = input("What is your name? ")
 print(player_name + ", can you find the goblin?")
+
 print("|_|"* number_of_doors)
 
 goblin_position = random.randint(1,number_of_doors)
 
 keep_trying = True
 
+# Main game loop
 while keep_trying:
   guessed_position = input("Can you guess where the goblin is hiding? ")
   guessed_position = int(guessed_position)
